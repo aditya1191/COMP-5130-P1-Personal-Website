@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typefaces in Coding</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500;700&family=Source+Code+Pro:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #fef7ed;
+            color: #451a03;
+        }
+
+        .text {
+            font-family: 'Monaco', serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: #92400e;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fef7ed;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fef7ed;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fbbf24;
+        }
+
+        /* headmain Section */
+        .headmain {
+            padding: 2rem 0 5rem;
+            background: linear-gradient(135deg, #fef7ed 0%, #fed7aa 100%);
+        }
+
+        .headmain h1 {
+            font-family: 'Rec Mono Linear', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .headmain p {
+            font-size: 1.25rem;
+            color: #78350f;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .code-sample {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+
+        .code-sample .comment {
+            color: #6b7280;
+        }
+
+        .code-sample .keyword {
+            color: #f59e0b;
+        }
+
+        .code-sample .string {
+            color: #10b981;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 3rem 0;
+            background: #92400e;
+            color: #fef7ed;
+            text-align: left;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .headmain h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .code-sample {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index_page.html" class="nav-brand">Typefaces in Coding</a>
+            <ul class="nav-links">
+                <li><a href="./index_page.html">Home</a></li>
+                <li><a href="./fonts_page.html">Try Coding Fonts</a></li>
+                <li><a href="./history_page.html">History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- headmain Section -->
+    <section class="headmain">
+        <div class="container">
+            <h1>Typefaces in Coding</h1>
+            <p class="text" >A peek into beautiful world of coding fonts, where every character matters and readability is the essence of the 
+                developer's efficiency.</p>
+
+            <div class="code-sample">
+                <span class="comment">// There is no perfect coding font for all but a perfect coding font for you !</span><br>
+                <span class="keyword">const</span> <span class="string">perfectFont</span> = {
+                <span class="string">readability</span>: <span class="keyword">true</span>,
+                <span class="string">character_distinction</span>: <span class="keyword">high</span>,<br>
+                <span class="string">ligatures</span>: <span class="keyword">optional</span>,
+                <span class="string">personality</span>: <span class="string">'just right'</span>
+                };
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Aditya Garimella - COMP 5130 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

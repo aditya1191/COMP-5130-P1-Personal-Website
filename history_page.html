@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Coding Fonts - Typefaces in Coding</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500;700&family=Source+Code+Pro:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #fef7ed;
+            color: #451a03;
+        }
+
+        .text {
+            font-family: 'Monaco', serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: #92400e;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fef7ed;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fef7ed;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fbbf24;
+        }
+
+        /* History Section */
+        .history-section {
+            padding: 4rem 0;
+            background: #fef3c7;
+        }
+
+        .section-title {
+            font-family: 'Monospace', serif;
+            font-size: 2.5rem;
+            color: #92400e;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .timeline {
+            max-width: 800px;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #f59e0b;
+        }
+
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.25rem;
+            color: #78350f;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 3rem 0;
+            background: #92400e;
+            color: #fef7ed;
+            text-align: left;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index_page.html" class="nav-brand">Typefaces in Coding</a>
+            <ul class="nav-links">
+                <li><a href="./index_page.html" class="active">Home</a></li>
+                <li><a href="./fonts_page.html">Try Coding Fonts</a></li>
+                <li><a href="./history_page.html">History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- History Section -->
+    <section class="history-section">
+        <div class="container">
+            <h2 class="section-title">Brief History of Coding Fonts</h2>
+
+            <div class="timeline text">
+                <div class="timeline-item">
+                    <div class="timeline-year">1960s</div>
+                    <div class="timeline-title">The Monospace Era Begins</div>
+                    <p>Early computer terminals used monospace fonts like Courier, where every character occupied the
+                        same width. This became the foundation for all coding fonts.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">1980s</div>
+                    <div class="timeline-title">Personal Computer Fonts</div>
+                    <p>With the rise of personal computers, fonts like Monaco and Consolas were designed specifically
+                        for programming, improving readability on screen.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2000s</div>
+                    <div class="timeline-title">Open Source Revolution</div>
+                    <p>Fonts like DejaVu Sans Mono and Liberation Mono brought high-quality, free coding fonts to
+                        developers worldwide.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2010s</div>
+                    <div class="timeline-title">The Ligature Renaissance</div>
+                    <p>Fira Code introduced programming ligatures, combining characters like >= and => into single
+                        glyphs, sparking debate and innovation in coding typography.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2020s</div>
+                    <div class="timeline-title">Modern Coding Fonts</div>
+                    <p>JetBrains Mono, Cascadia Code, and others focus on developer experience with improved character
+                        distinction, multiple weights, and careful attention to readability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Aditya Garimella - COMP 5130 </p>
+        </div>
+    </footer>
+</body>
+
+</html>
