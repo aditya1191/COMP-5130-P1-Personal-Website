@@ -258,8 +258,8 @@
             gap: 15px;
             align-items: center;
             color: #3c996f;
-            font-size: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
 
         }
 
@@ -270,8 +270,8 @@
             background-color: #252526;
             color: #d4d4d4;
             cursor: pointer;
-            font-size: 18px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 22px;
+            font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         /* --- Single Output Panel --- */
@@ -360,18 +360,6 @@
             <h1 class="section-title">Try Different Coding Fonts</h2>
             <div class="font-preview-container">
                 <div class="controls output-panel">
-                    <textarea id="codeInput"
-                        placeholder="Type or paste your code snippet here to see the selected font."
-                        oninput="updateRenderings()">
-function fibonacci(n) {
-                        if (n <= 1) return n; 
-                        return fibonacci(n - 1) + fibonacci(n - 2); 
-                        } 
-console.log(fibonacci(10));
-// 55
-
-        </textarea>
-
                     <div class="selector-row">
                         <label for="fontSelect">Choose Font:</label>
                         <select id="fontSelect" onchange="changeFont()">
@@ -390,6 +378,19 @@ console.log(fibonacci(10));
                             <option value="c">C Snippet</option>
                         </select>
                     </div>
+                    <textarea id="codeInput"
+                        placeholder="Type or paste your code snippet here to see the selected font."
+                        oninput="updateRenderings()">
+function fibonacci(n) {
+                        if (n <= 1) return n; 
+                        return fibonacci(n - 1) + fibonacci(n - 2); 
+                        } 
+console.log(fibonacci(10));
+// 55
+
+        </textarea>
+
+                    
                 </div>
 
                 <div class="output-panel">
