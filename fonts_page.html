@@ -18,8 +18,9 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            background-color: #fef7ed;
+            background-color: whitesmoke;
             /* color: #451a03; */
+            color: #000000;
         }
 
         .text {
@@ -34,7 +35,7 @@
 
         /* Navigation */
         nav {
-            background: #92400e;
+            background: whitesmoke;
             padding: 1rem 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -46,10 +47,11 @@
         }
 
         .nav-brand {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #fef7ed;
+            font-family: 'Operator Mono', monospace;
+            font-size: 1.75rem;
+            /* font-weight: 700; */
+            color: #0077b3;
+            ;
             text-decoration: none;
         }
 
@@ -60,21 +62,23 @@
         }
 
         .nav-links a {
-            color: #fef7ed;
-            text-decoration: none;
+            color: #0077b3;
+            text-decoration: underline;
             font-weight: 500;
             transition: color 0.3s ease;
+            font-family: 'Operator Mono', monospace;
+            font-size: 1.5rem;
         }
 
         .nav-links a:hover,
         .nav-links a.active {
-            color: #fbbf24;
+            color: #0077b3;
         }
 
         .section-title {
-            font-family: 'Monospace', serif;
+            font-family: 'Rec Mono Linear', monospace;
             font-size: 2.5rem;
-            color: #92400e;
+            color: #080808;
             margin-bottom: 3rem;
             text-align: left;
         }
@@ -82,7 +86,7 @@
         /* Character Showcase */
         .character-showcase {
             padding: 4rem 0;
-            background: #fef3c7;
+            background: whitesmoke;
         }
 
         .character-grid {
@@ -92,7 +96,7 @@
             margin-bottom: 3rem;
         }
 
-        .character-card {
+        /* .character-card {
             background: white;
             padding: 2rem;
             border-radius: 0.75rem;
@@ -102,7 +106,7 @@
 
         .character-card h3 {
             font-size: 1.25rem;
-            color: #92400e;
+            color: whitesmoke;
             margin-bottom: 1rem;
             text-align: left;
         }
@@ -116,21 +120,22 @@
             border-radius: 0.375rem;
             text-align: left;
             white-space: pre;
-        }
+        } */
 
         /* Interactive Preview */
         .interactive-preview {
             padding: 4rem 0;
-            background: #fef7ed;
+            background: whitesmoke;
         }
 
-        .preview-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 2px solid #fbbf24;
-        }
+        /* .font-preview-container{
+            font-size: 1.25rem;
+            /* background: white; */
+            /* padding: 2rem; */
+            /* border-radius: 0.75rem; */
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            /* border: 2px solid #fbbf24; */
+         
 
         .font-selector {
             margin-bottom: 2rem;
@@ -167,7 +172,7 @@
         /* Typography Demo */
         .typography-demo {
             padding: 4rem 0;
-            background: #fed7aa;
+            background: whitesmoke;
         }
 
         .demo-grid {
@@ -195,7 +200,7 @@
             padding: 1.5rem;
             border-radius: 0.375rem;
             font-family: 'Source Code Pro', monospace;
-            font-size: 0.875rem;
+            /* font-size: 0.875rem; */
             overflow-x: auto;
             white-space: pre;
         }
@@ -244,7 +249,7 @@
             color: #d4d4d4;
             font-family: 'Fira Code', monospace;
             /* Default font in textarea */
-            font-size: 14px;
+            font-size: 20px;
             resize: vertical;
         }
 
@@ -275,16 +280,20 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             min-height: 300px;
             padding: 15px;
-            
+
         }
 
         .code-output {
             white-space: pre-wrap;
             /* Preserve formatting and wrap long lines */
             word-wrap: break-word;
-            font-size: 16px;
+            /* font-size: 16px; */
             line-height: 1.4;
             /* Font class will be dynamically added here */
+        }
+        
+        .preview-text {
+                font-size: 1.75rem;
         }
 
         /* --- Font Specific Classes --- */
@@ -300,12 +309,12 @@
             font-family: 'Roboto Mono', monospace;
         }
 
-        .font-inconsolata {
-            font-family: 'Inconsolata', monospace;
+        .font-source-code-pro {
+            font-family: 'Source Code Pro', monospace;
         }
 
         .font-consolas {
-            font-family: 'Consolas', monospace;
+            font-family: 'Operator Mono', monospace;
         }
 
         /* Responsive */
@@ -318,7 +327,7 @@
 
             .code-block,
             .preview-text {
-                font-size: 0.75rem;
+                font-size: 1.75rem;
             }
 
             .nav-links {
@@ -332,11 +341,11 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="index_page.html" class="nav-brand">Typefaces in Coding</a>
+            <a href="index_page.html" class="nav-brand">Personal Website COMP 5130</a>
             <ul class="nav-links">
-                <li><a href="./index_page.html" class="active">Home</a></li>
-                <li><a href="./fonts_page.html">Try Coding Fonts</a></li>
-                <li><a href="./history_page.html">History</a></li>
+                <li><a href="./index_page.html">Home >></a></li>
+                <li><a href="./fonts_page.html">Tryout Fonts >></a></li>
+                <li><a href="./history_page.html">History >></a></li>
             </ul>
         </div>
     </nav>
@@ -344,50 +353,45 @@
     <!-- Interactive Preview -->
     <section class="interactive-preview">
         <div class="container">
-            <h2 class="section-title">Try Coding Different Fonts</h2>
-            <div class="controls output-panel">
-                <textarea id="codeInput" placeholder="Type or paste your code snippet here to see the selected font."
-                    oninput="updateRenderings()">
-function calculate_hypotenuse(a, b) {
-    // Check for equality == and assignment =
-    let c = 0;
-    
-    // Check for power operator **
-    c = Math.sqrt(a**2 + b**2); 
-    
-    // Check comparison operators: >=, <=
-    if (c >= 10.0) {
-        console.log("Hypotenuse is large!");
-    }
-    return c;
-}
+            <h1 class="section-title">Try Different Coding Fonts</h2>
+            <div class="font-preview-container">
+                <div class="controls output-panel">
+                    <textarea id="codeInput"
+                        placeholder="Type or paste your code snippet here to see the selected font."
+                        oninput="updateRenderings()">
+function fibonacci(n) {
+                        if (n <= 1) return n; 
+                        return fibonacci(n - 1) + fibonacci(n - 2); 
+                        } 
+console.log(fibonacci(10));
+// 55
 
-const result = calculate_hypotenuse(3, 4); 
-console.log(`Result: ${result}`); // 5.0
         </textarea>
 
-                <div class="selector-row">
-                    <label for="fontSelect">Choose Font:</label>
-                    <select id="fontSelect" onchange="changeFont()">
-                        <option value="font-fira-code" selected>Fira Code</option>
-                        <option value="font-jetbrains-mono">JetBrains Mono</option>
-                        <option value="font-roboto-mono">Roboto Mono</option>
-                        <option value="font-inconsolata">Inconsolata</option>
-                        <option value="font-consolas">Consolas</option>
-                    </select>
+                    <div class="selector-row">
+                        <label for="fontSelect">Choose Font:</label>
+                        <select id="fontSelect" onchange="changeFont()">
+                            <option value="font-fira-code" selected>Fira Code</option>
+                            <option value="font-jetbrains-mono">JetBrains Mono</option>
+                            <option value="font-roboto-mono">Roboto Mono</option>
+                            <option value="font-inconsolata">Inconsolata</option>
+                            <option value="font-consolas">Consolas</option>
+                        </select>
 
-                    <label for="exampleSelect">Load Example:</label>
-                    <select id="exampleSelect" onchange="loadExample(this.value)">
-                        <option value="" disabled selected>— Select Code Example —</option>
-                        <option value="default">Default Snippet (JS)</option>
-                        <option value="python">Python Snippet</option>
-                        <option value="c">C Snippet</option>
-                    </select>
+                        <label for="exampleSelect">Load Example:</label>
+                        <select id="exampleSelect" onchange="loadExample(this.value)">
+                            <option value="" disabled selected>— Select Code Example —</option>
+                            <option value="default">Default Snippet (JS)</option>
+                            <option value="python">Python Snippet</option>
+                            <option value="c">C Snippet</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
 
-            <div class="output-panel preview-text">
-                <pre id="codeOutput" class="code-output font-fira-code"></pre>
+                <div class="output-panel">
+                    <pre id="codeOutput" class="code-output font-fira-code preview-text"></pre>
+                </div>
+
             </div>
         </div>
     </section>
@@ -475,93 +479,6 @@ int main() {
         });
 
     </script>
-<!-- 
-    <section class="interactive-preview">
-        <div class="container">
-            <h2 class="section-title">Try Coding Different Fonts</h2>
-
-            <div class="preview-container">
-                <div class="font-selector">
-                    <label for="fontSelect">Choose a coding font:</label>
-                    <select id="fontSelect" onchange="changeFont()">
-                        <option value="'JetBrains Mono', monospace">JetBrains Mono</option>
-                        <option value="'Fira Code', monospace">Fira Code</option>
-                        <option value="'Source Code Pro', monospace">Source Code Pro</option>
-                        <option value="'Consolas', monospace">Consolas</option>
-                        <option value="'Monaco', monospace">Monaco</option>
-                    </select>
-                </div>
-
-                <div class="preview-text" id="previewText">// Sample code to test font readability
-                    const users = await fetch('/api/users')
-                    .then(response => response.json())
-                    .catch(error => console.error('Error:', error));
-
-                    if (users && users.length > 0) {
-                    users.forEach(user => {
-                    console.log(`User: ${user.name} (ID: ${user.id})`);
-                    });
-                    }</div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Typography Demo -->
-    <!-- <section class="typography-demo">
-        <div class="container">
-            <h2 class="section-title">Fonts in Action</h2>
-
-            <div class="demo-grid">
-                <div class="demo-card">
-                    <h3>JavaScript Function</h3>
-                    <div class="code-block">function fibonacci(n) {
-                        if (n <= 1) return n; return fibonacci(n - 1) + fibonacci(n - 2); } console.log(fibonacci(10));
-                            // 55</div>
-                    </div>
-
-                    <div class="demo-card">
-                        <h3>Terminal Output</h3>
-                        <div class="code-block terminal">$ npm install awesome-font
-                            Package installed successfully
-                            $ git commit -m "Add new coding font"
-                            [main 1a2b3c4] Add new coding font
-                            2 files changed, 15 insertions(+)</div>
-                    </div>
-
-                    <div class="demo-card">
-                        <h3>CSS Grid Layout</h3>
-                        <div class="code-block">.container {
-                            display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                            gap: 1rem;
-                            padding: 2rem;
-                            }</div>
-                    </div>
-
-                    <div class="demo-card">
-                    <div class="quote">
-                        "The right font can make the difference between code that flows like poetry and code that
-                        feels like a puzzle."
-                    </div>
-                </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
-    <!-- </section> -->
-
-    <!-- Footer -->
-    <!-- <footer class="footer">
-        <div class="container">
-            <p>Aditya Garimella - COMP 5130 </p>
-        </div>
-    </footer>
-
-    <script>
-        function changeFont() {
-            const select = document.getElementById('fontSelect');
-            const previewText = document.getElementById('previewText');
-            previewText.style.fontFamily = select.value;
-        }
-    </script>  -->
 </body>
 
 </html>
